@@ -1,0 +1,20 @@
+<p>mat-radio works!</p>
+
+
+<mat-radio-group>
+  <mat-radio-button value="male">Male</mat-radio-button>
+  <mat-radio-button value="female">Female</mat-radio-button>
+</mat-radio-group>
+
+<br><br>
+
+<form [formGroup]="form">
+
+  <mat-label>Gender</mat-label>
+  <mat-radio-group formControlName="gender">
+    <mat-radio-button value="male">Male</mat-radio-button>
+    <mat-radio-button value="female">Female</mat-radio-button>
+    <mat-radio-button value="other">Other</mat-radio-button>
+  </mat-radio-group>
+
+</form>

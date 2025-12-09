@@ -1,0 +1,18 @@
+<p>mat-check-box works!</p>
+
+
+<mat-checkbox>Subscribe to Newsletter</mat-checkbox>
+
+<br><br>
+
+<form [formGroup]="form">
+  <mat-checkbox formControlName="acceptTerms">
+    I accept the Terms & Conditions
+  </mat-checkbox>
+
+  <br><br>
+
+  <button mat-raised-button color="primary" [disabled]="form.invalid">
+    Submit
+  </button>
+</form>
