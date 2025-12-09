@@ -25,6 +25,13 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatePickerComponent } from './mat-date-picker/mat-date-picker.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatCardComponent } from './mat-card/mat-card.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatIconComponent } from './mat-icon/mat-icon.component';
+import { SampleScreenComponent } from './sample-screen/sample-screen.component';
+import { TablePaginationComponent } from './table-pagination/table-pagination.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,6 +44,10 @@ import { MatDatePickerComponent } from './mat-date-picker/mat-date-picker.compon
     MatCheckBoxComponent,
     MatRadioComponent,
     MatDatePickerComponent,
+    MatCardComponent,
+    MatIconComponent,
+    SampleScreenComponent,
+    TablePaginationComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +65,10 @@ import { MatDatePickerComponent } from './mat-date-picker/mat-date-picker.compon
     MatCheckboxModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCardModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
